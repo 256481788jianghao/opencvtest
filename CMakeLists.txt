@@ -1,0 +1,6 @@
+project(test)
+#message(${PROJECT_SOURCE_DIR})
+include_directories(${PROJECT_SOURCE_DIR}/../opencvlib/include)
+link_directories(${PROJECT_SOURCE_DIR}/../opencvlib/lib)
+add_executable(test src/main.cpp)
+target_link_libraries(test "libopencv_core.so" "libopencv_imgcodecs.so" "libopencv_highgui.so")
