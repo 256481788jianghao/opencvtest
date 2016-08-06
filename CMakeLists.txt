@@ -12,4 +12,4 @@ add_executable(loadImgTest src/loadImgTest/main.cpp)
 target_link_libraries(loadImgTest "libopencv_core${LIBSUFFIX}" "libopencv_imgcodecs${LIBSUFFIX}" "libopencv_highgui${LIBSUFFIX}")
 
 add_executable(videoTest src/videoTest/main.cpp)
-target_link_libraries(videoTest "libopencv_videoio${LIBSUFFIX}" "libopencv_core${LIBSUFFIX}" "libopencv_imgcodecs${LIBSUFFIX}" "libopencv_highgui${LIBSUFFIX}")
+target_link_libraries(videoTest "libopencv_imgproc${LIBSUFFIX}" "libopencv_videoio${LIBSUFFIX}" "libopencv_core${LIBSUFFIX}" "libopencv_imgcodecs${LIBSUFFIX}" "libopencv_highgui${LIBSUFFIX}")
