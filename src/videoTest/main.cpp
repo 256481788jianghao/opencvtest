@@ -2,7 +2,7 @@
 using namespace cv;
 
 int main(){
-    VideoCapture capture("1.avi");
+    VideoCapture capture(0);
     while(1){
         Mat frame;
         capture >> frame;
